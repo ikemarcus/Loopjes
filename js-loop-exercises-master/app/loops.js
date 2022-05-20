@@ -11,9 +11,15 @@ exports.loops = {
    * @outcome 627
    */
   sum: (arr1, arr2) => {
-    for (let i = 0; i < 22; i++) {
-      arr1.reduce[i] += arr2.reduce[i];
+    let sum1 = 0;
+    for (let i = 0; i < arr1.length; i++) {
+      sum1 += arr1[i];
     }
+    let sum2 = 0;
+    for (let i = 0; i < arr2.length; i++) {
+      sum2 += arr2[i];
+    }
+    return sum1 + sum2;
   },
 
   /**
@@ -39,7 +45,9 @@ exports.loops = {
    * @outcome [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
    */
   reverse: (array) => {
-
+    for (const number of array.reverse()) {
+      console.log(number);
+    }
   },
 
   /**
