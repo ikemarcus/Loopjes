@@ -10,7 +10,11 @@ exports.loops = {
    *
    * @outcome 627
    */
-  sum: (arr1, arr2) => {},
+  sum: (arr1, arr2) => {
+    for (let i = 0; i < 22; i++) {
+      arr1.reduce[i] += arr2.reduce[i];
+    }
+  },
 
   /**
    * Using a loop to print all even numbers up to and including n. Don’t include 0.
@@ -19,7 +23,13 @@ exports.loops = {
    *
    * @outcome 2 4 6 8 10 12 14 16 18 20 22
    */
-  printEven: (amount) => {},
+  printEven: (amount) => {
+    while (Number !== 23) {
+      if (Number % 2 == 0)
+        console.log(x);
+      x++;
+    }
+  },
 
   /**
    * Using a loop to output the elements in reverse order
@@ -28,7 +38,9 @@ exports.loops = {
    *
    * @outcome [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
    */
-  reverse: (array) => {},
+  reverse: (array) => {
+
+  },
 
   /**
    * Given two arrays of integers. Add up each element in the same position and
@@ -50,7 +62,16 @@ exports.loops = {
    *
    * @outcome 24
    */
-  factorial: (n) => {},
+  factorial: (n) => {
+    if (n === 0 || n === 1) {
+      return 1;
+    } else {
+      for (let i = n - 1; i >= 1; i--) {
+        n *= i;
+      }
+      return n;
+    }
+  },
 
   /**
    * Finds the summation of every number from 1 to num.
