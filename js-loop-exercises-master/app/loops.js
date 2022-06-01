@@ -30,11 +30,13 @@ exports.loops = {
    * @outcome 2 4 6 8 10 12 14 16 18 20 22
    */
   printEven: (amount) => {
-    while (Number !== 23) {
-      if (Number % 2 == 0)
-        console.log(x);
-      x++;
-    }
+    for(i = 1; i <= amount; i++)
+		{
+			if(i % 2 == 0)
+			{
+				System.out.print(i +"\t"); 
+			}
+		}	
   },
 
   /**
@@ -45,9 +47,11 @@ exports.loops = {
    * @outcome [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
    */
   reverse: (array) => {
-    for (const number of array.reverse()) {
-      console.log(number);
-    }
+    var newArr = [];
+    for (var i = 0, j = array.length - 1; i < array.length; i++, j--) {      
+        newArr[i] = array[j];
+    }   
+    return newArr;
   },
 
   /**
@@ -60,7 +64,12 @@ exports.loops = {
    *
    * @outcome [10, 10, 10, 10]
    */
-  sumPair: (arr1, arr2) => {},
+  sumPair: (arr1, arr2) => {
+    var sum = 0;
+    for (var i = 0; i < arr1; i++)
+        sum += arr2[i];
+    return sum;
+  },
 
   /**
    * Given a number n Calculate the factorial of the number
@@ -87,5 +96,12 @@ exports.loops = {
    *
    * @param {Number} number
    */
-  summation: (number) => {},
+  summation: (number) => {
+    let result = 0;
+    for(let i = 1; i <= number; i++) {
+      result = result + i;
+    }
+    return result
+  
+  },
 };
